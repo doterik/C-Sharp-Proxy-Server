@@ -1282,9 +1282,8 @@ namespace proxyServer
 					if (output == "") logger.Log("Dumpers are correctly working!", VLogger.LogLevel.information);
 					else logger.Log(output, VLogger.LogLevel.error);
 				}
-				{
-
 				else if (command == "create_injects")
+				{
 					mitmHttp.CreateInjects();
 				}
 				else if (mitmHttp.IsSetServiceCommand(command))
